@@ -1,0 +1,139 @@
+:root {--dark:darkblue;
+--light: chiffonyellow;
+--border-radius: 50px;
+--border-margin: 10px ;
+--flex:wrap
+}
+body, main {
+  font-size: 16px;
+   color: rgb(210, 106, 210);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+  font-weight: 500;
+}
+  
+*{
+box-sizing: border-box;
+background: black;
+/* display:flex;
+flex-direction:column;
+flex:wrap */
+}
+Header
+{box-sizing: border-box;
+  padding: 20px;
+display: var(--flex);
+flex-direction:inline;
+min-height: 50px;
+font-size:40px;
+
+text-align:center;
+margin: 50 50 0 0;
+border: var(--border-margin)
+
+}
+header p{
+  text-align: match-parent ;
+  font-size:10px
+}
+h1{text-align:center}
+
+ul{display:flex;
+  box-sizing: border-box;
+  flex-wrap:var(--flex);
+  /* flex-direction:row; */
+justify-content:space-around
+}
+
+.thirdrow {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  align-items: center;
+  color:  rgb(210, 106, 210);
+  box-sizing:border-box;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  grid-auto-columns: minmax(100px, auto);
+  justify-content: center;
+  align-items: center ;
+
+}
+.rowfour {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+ color:rgb(210, 106, 210) ;box-sizing:border-box;
+ padding: 10px;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 10px;
+ grid-auto-columns: minmax(100px, auto);
+ justify-content: center;
+  align-items: center ;
+}
+.thirdrow h2, .rowfour h2, .thirdrow h3, .rowfour  h3, .thirdrow h4, .rowfour h4{ 
+  border-style: solid;
+  border-color:white;
+  border-width: 1px;
+  border-radius: 5px  ;
+  padding: 10px;
+  flex: 0 0 100px;
+  margin: 20px;
+  justify-content:space-around;
+  flex-direction: column;
+  position:relative;
+          margin-top: -25px ;
+}
+.thirdrow p, .rowfour p{
+  display:flex;
+  flex-wrap: wrap;
+  box-sizing:border-box;
+  font-size: small;
+  text-align: center;
+  justify-content: flex-start;
+
+ 
+
+}
+.rowfour pre, .thirdrow pre{
+background-image: linear-gradient(180deg, rgb(91, 15, 94),
+rgb(156, 9, 161));
+color:white;
+border-radius:8px;
+text-align: left;
+}
+pre:hover{
+box-sizing:border-box;
+font-size: 15px;
+border-radius: 10px;
+padding:15px;
+transition:all 0.5s ease-in-out;
+box-shadow: inset 0px 0px 8px
+          rgba(232, 102, 236, 1), 0 0 15px
+          rgba(232,102,236,1);
+
+}
+
+div {
+  border-style: dashed;
+  border-color: aliceblue;
+  margin: var(--border-margin);
+  padding: 10px
+}
+}
+@media screen and (max-width: 768px) {
+  header, section{
+  flex-direction: column;
+
+  }
+
+  /* section {
+    padding-right: 0;
+  } */
